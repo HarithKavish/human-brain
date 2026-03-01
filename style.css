@@ -20,7 +20,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e0f7fa;
+    background-color: #000;
 }
 
 .container {
@@ -94,6 +94,7 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
     transition: transform var(--transition-speed);
 }
 
@@ -240,38 +241,15 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Smooth Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.brain-content section {
-    animation: fadeIn 0.8s ease-out forwards;
-}
-
-.brain-content section:nth-child(1) { animation-delay: 0.2s; }
-.brain-content section:nth-child(2) { animation-delay: 0.4s; }
-.brain-content section:nth-child(3) { animation-delay: 0.6s; }
-.brain-content section:nth-child(4) { animation-delay: 0.8s; }
-.brain-content section:nth-child(5) { animation-delay: 1s; }
-.brain-content section:nth-child(6) { animation-delay: 1.2s; }
-
 .brain-diagram-image {
-    animation: fadeIn 0.6s ease-out forwards;
+    background-color: #000;
 }
 
-.brain-diagram-image:nth-child(1) { animation-delay: 0.3s; }
+.brain-regions, .functions-content, .neuroscience-content, .health-content, .future-content .region, .functions-content .function-item, .neuroscience-content .neuro-concept, .health-content .health-topic {
+    background-color: #121212;
+}
 
 .brain-facts .fact {
-    animation: fadeIn 0.5s ease-out forwards;
-}
-
-.brain-facts .fact:nth-child(1) { animation-delay: 0.1s; }
-.brain-facts .fact:nth-child(2) { animation-delay: 0.3s; }
-
-@media (max-width: 768px) {
-    .brain-content section {
-        animation-delay: 0.1s !important;
-    }
+    background-color: #1e1e1e;
+    color: #fffde7;
 }
